@@ -2,7 +2,6 @@
   "name": "react-typescript-parcel",
   "version": "0.0.1",
   "description": "boilerplate for setting up parcel bundler for a typescript react web-app",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bodn/react-typescript-parcel.git"
@@ -16,7 +15,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel ./src/index.html -p 8080",
-    "build": "parcel build"
+    "build": "parcel build index.html --public-url ./",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "array-move": "^4.0.0",
@@ -27,6 +27,7 @@
   "devDependencies": {
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "gh-pages": "^4.0.0",
     "parcel": "^2.7.0",
     "process": "^0.11.10",
     "typescript": "^4.7.4"

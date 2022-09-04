@@ -1,7 +1,7 @@
-# react-typescript-parcel
-boiler plate for React using Typescript and Parcel bundler
+# Reorganizing Cards with Framer
+Proof of concept project to allow the reordering of a set of cards in the x and y axis.
 
-## Packages Included
-- React `version 8.2.0`
-- Parcel `version 2.7.0`
-- Typescript `version 4.7.4`
+### Using:
+- react `version 8.2.0`
+- framer-motion `version 7.2.1`
+- array-move `4.0.0`
